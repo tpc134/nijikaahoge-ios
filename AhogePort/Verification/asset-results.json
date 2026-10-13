@@ -1,0 +1,83 @@
+{
+  "input_sha256": "707623df8d6a01dc32d8d276a3592d8750bd59b8fcbdfd41b283037736435787",
+  "scene_fields_identical": true,
+  "original_pngs_identical": 75,
+  "atlas_identical": true,
+  "cpp_generation_reproducible": true,
+  "max_texture_dimension": 1351,
+  "audio": [
+    {
+      "id": 0,
+      "channels": 1,
+      "frames": 29008,
+      "seconds": 0.6043333333333333
+    },
+    {
+      "id": 1,
+      "channels": 2,
+      "frames": 102736,
+      "seconds": 2.1403333333333334
+    },
+    {
+      "id": 2,
+      "channels": 2,
+      "frames": 31056,
+      "seconds": 0.647
+    },
+    {
+      "id": 3,
+      "channels": 2,
+      "frames": 12624,
+      "seconds": 0.263
+    },
+    {
+      "id": 4,
+      "channels": 2,
+      "frames": 23888,
+      "seconds": 0.49766666666666665
+    },
+    {
+      "id": 5,
+      "channels": 2,
+      "frames": 90448,
+      "seconds": 1.8843333333333334
+    },
+    {
+      "id": 6,
+      "channels": 2,
+      "frames": 19792,
+      "seconds": 0.41233333333333333
+    },
+    {
+      "id": 7,
+      "channels": 2,
+      "frames": 247120,
+      "seconds": 5.148333333333333
+    },
+    {
+      "id": 8,
+      "channels": 2,
+      "frames": 290128,
+      "seconds": 6.044333333333333
+    },
+    {
+      "id": 9,
+      "channels": 2,
+      "frames": 216400,
+      "seconds": 4.508333333333334
+    },
+    {
+      "id": 10,
+      "channels": 2,
+      "frames": 144720,
+      "seconds": 3.015
+    },
+    {
+      "id": 11,
+      "channels": 2,
+      "frames": 163152,
+      "seconds": 3.399
+    }
+  ],
+  "no_xcode_project_or_ipa": true
+}

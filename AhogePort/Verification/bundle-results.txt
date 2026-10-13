@@ -1,0 +1,2 @@
+Host bundle checker: 7 tests; failures=0 errors=0
+Not an Apple SDK build.

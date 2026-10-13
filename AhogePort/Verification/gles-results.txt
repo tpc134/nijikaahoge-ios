@@ -1,0 +1,10 @@
+portrait480: 320x480, 9 draw calls, nonblank, texture reload identical
+portrait568: 320x568, 9 draw calls, nonblank, texture reload identical
+landscape: 568x320, 9 draw calls, nonblank, texture reload identical
+ipad: 768x1024, 9 draw calls, nonblank, texture reload identical
+seika1: 640x512, 10 draw calls, nonblank, texture reload identical
+seika2: 640x512, 10 draw calls, nonblank, texture reload identical
+seika3: 640x512, 10 draw calls, nonblank, texture reload identical
+seika4: 640x512, 10 draw calls, nonblank, texture reload identical
+gold-celebration: 640x512, 14 draw calls, nonblank, texture reload identical
+debris240: 640x512, 10 draw calls, nonblank, texture reload identical

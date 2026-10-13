@@ -1,0 +1,17 @@
+/AhogePort/Tests/out/
+__pycache__/
+*.pyc
+/build/
+/DerivedData/
+
+# Xcode per-user state
+xcuserdata/
+*.xcuserstate
+
+# macOS metadata
+.DS_Store
+._*
+
+# OS cruft
+Thumbs.db
+hs_err_pid*

@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-10-11",
+  "method": "Read metadata.platforms where name=iOS from Apple's official DocC JSON endpoints; not SDK compilation",
+  "records": [
+    {"path": "glkit/glkview", "introduced": "5.0"},
+    {"path": "quartzcore/cadisplaylink/frameinterval", "introduced": "3.1"},
+    {"path": "uikit/uiviewcontroller/supportedinterfaceorientations", "introduced": "6.0"},
+    {"path": "uikit/uiviewcontroller/shouldautorotate", "introduced": "6.0"},
+    {"path": "uikit/uiviewcontroller/viewdidlayoutsubviews()", "introduced": "5.0"},
+    {"path": "uikit/uiviewcontroller/prefersstatusbarhidden", "introduced": "7.0", "handling": "override for newer OS only; iOS 6 uses UIStatusBarHidden"},
+    {"path": "uikit/uitouch/type", "introduced": "9.0", "handling": "respondsToSelector guard"},
+    {"path": "avfaudio/avaudiosession/setpreferredsamplerate(_:)", "introduced": "6.0"},
+    {"path": "avfaudio/avaudiosession/setpreferrediobufferduration(_:)", "introduced": "3.0"},
+    {"path": "avfaudio/avaudiosession/setactive(_:options:)", "introduced": "6.0"},
+    {"path": "avfaudio/avaudiosession/interruptionnotification", "introduced": "6.0"},
+    {"path": "avfaudio/avaudiosession/mediaserviceswereresetnotification", "introduced": "6.0"},
+    {"path": "avfaudio/avaudiosession/interruptionoptions/shouldresume", "introduced": "6.0"},
+    {"path": "imageio/cgimagesourcecreatewithurl(_:_:)", "introduced": "4.0"},
+    {"path": "glkit/glktextureloaderoriginbottomleft", "introduced": "5.0", "handling": "reference only; not called"}
+  ],
+  "json_url_template": "https://developer.apple.com/tutorials/data/documentation/{path}.json",
+  "documentation_url_template": "https://developer.apple.com/documentation/{path}",
+  "unresolved_endpoint": "avfaudio/avaudiosession/interruptionoptionkey returned 404; do not represent this endpoint as verified metadata"
+}

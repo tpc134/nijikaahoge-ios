@@ -1,0 +1,37 @@
+PASS original data and fixture decomposition
+PASS letterbox and 12-point finger radius
+PASS head touch tolerance and no initial jump
+PASS exact bag and debris hits win
+PASS rotated mirrored head tolerance
+PASS letterbox padding excluded
+PASS single drag owner and cancellation
+PASS release zeroes velocities at final position
+PASS mirror reflects polygon and bounds about origin
+PASS draw corners match mirrored rotated bounds
+PASS all four Seika directions and signal retreat
+PASS sleeping small Bocchi teleports and returns three times
+PASS actual Seika overlap and two-second small Bocchi return
+PASS single convex full-size ahoge fixture
+PASS growth animation enlarges fixtures
+PASS animation duration, looping, pingpong and restart
+PASS bag offscreen preserves contents
+PASS real ten-pull collect feed cycle
+PASS seven feeding branches and repeated max celebration
+PASS normal bag does not feed Kita
+PASS all milestones fire only once
+PASS offscreen head regenerates once and is safely reclaimed
+METRIC debris=60 median_ms=0.6548 p95_ms=1.2071
+METRIC debris=120 median_ms=1.5851 p95_ms=3.0858
+METRIC debris=240 median_ms=5.169 p95_ms=10.6381
+PASS sleep, debris stress and finite state at 60 120 240
+PASS long frame clamp and no post-pause catch-up
+PASS audio exact linear stereo pan and dB
+PASS audio loop, twelve voices, clipping and suspension
+PASS audio ring producer consumer safety
+PASS audio lifecycle intent never resumes hidden or background game
+PASS audio reset and declined interruption require explicit user action
+PASS audio missing interruption-ended notification can recover on touch
+PASS audio variable hardware slices require no fixed scratch buffer
+PASS actual bundled WAV parser loads twelve clips with correct channels
+PASS WAV malformed chunks and every truncated prefix fail safely
+RESULT 33 tests passed

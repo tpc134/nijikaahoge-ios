@@ -1,0 +1,162 @@
+{
+  "file": "atlas.png",
+  "size": 512,
+  "regions": {
+    "frames/frame016.png": [
+      1,
+      1,
+      82,
+      134
+    ],
+    "frames/frame040.png": [
+      85,
+      1,
+      137,
+      107
+    ],
+    "frames/frame073.png": [
+      224,
+      1,
+      137,
+      107
+    ],
+    "frames/frame015.png": [
+      363,
+      1,
+      82,
+      102
+    ],
+    "frames/frame009.png": [
+      1,
+      137,
+      88,
+      87
+    ],
+    "frames/frame008.png": [
+      91,
+      137,
+      88,
+      81
+    ],
+    "frames/frame014.png": [
+      181,
+      137,
+      82,
+      81
+    ],
+    "frames/frame007.png": [
+      265,
+      137,
+      86,
+      68
+    ],
+    "frames/frame010.png": [
+      353,
+      137,
+      38,
+      65
+    ],
+    "frames/frame013.png": [
+      393,
+      137,
+      82,
+      56
+    ],
+    "frames/frame006.png": [
+      1,
+      226,
+      68,
+      56
+    ],
+    "frames/frame012.png": [
+      71,
+      226,
+      68,
+      56
+    ],
+    "frames/frame037.png": [
+      141,
+      226,
+      52,
+      53
+    ],
+    "frames/frame011.png": [
+      195,
+      226,
+      46,
+      47
+    ],
+    "frames/frame049.png": [
+      243,
+      226,
+      37,
+      47
+    ],
+    "frames/frame051.png": [
+      282,
+      226,
+      41,
+      40
+    ],
+    "frames/frame063.png": [
+      325,
+      226,
+      12,
+      37
+    ],
+    "frames/frame052.png": [
+      339,
+      226,
+      36,
+      36
+    ],
+    "frames/frame005.png": [
+      377,
+      226,
+      53,
+      33
+    ],
+    "frames/frame064.png": [
+      432,
+      226,
+      19,
+      32
+    ],
+    "frames/frame050.png": [
+      453,
+      226,
+      15,
+      32
+    ],
+    "frames/frame061.png": [
+      470,
+      226,
+      25,
+      30
+    ],
+    "frames/frame062.png": [
+      1,
+      284,
+      34,
+      29
+    ],
+    "frames/frame004.png": [
+      37,
+      284,
+      33,
+      28
+    ],
+    "frames/frame060.png": [
+      72,
+      284,
+      19,
+      20
+    ],
+    "frames/frame059.png": [
+      93,
+      284,
+      29,
+      19
+    ]
+  }
+}
