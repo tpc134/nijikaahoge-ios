@@ -23,7 +23,7 @@ CocoaPods は使わず、実行時にネットワークから依存を取得す�
 | --- | --- |
 | 対象 OS | iOS 6.0 以降 |
 | Base SDK | iOS 9.3（Xcode 7.3 / 7.3.1） |
-| アーキテクチャ | armv7（iOS 7+ 向けに arm64 スライスも可） |
+| アーキテクチャ | armv7 + arm64 スライス（armv7 は iOS 6、arm64 は iOS 7 以降をカバー） |
 | Bundle ID | `com.ruich97.nijikaahoge` |
 | 言語 | Objective-C++ / C++11、libc++、ARC、C++ 例外オン、Bitcode オフ |
 | グラフィックス / 物理 / オーディオ | OpenGL ES 2 / Box2D 2.2.1 / Core Audio RemoteIO |
@@ -39,15 +39,17 @@ CocoaPods は使わず、実行時にネットワークから依存を取得す�
 App Store 署名でも、通常の個人 / 法人証明書による署名でもありません。脱獄も TrollStore も
 導入していない端末には直接インストールできません。ご自身でビルドした場合も署名が別途必要です。
 
+**iPhone 4S（iOS 6）** と **iPhone SE（iOS 15）** での動作を確認済みです。
+
 ## ビルド状況
 
-**Xcode でのコンパイルとリンクに成功し、iPhone と iPad の実機で動作、ldid 署名済み IPA も生成済みです
-（冒頭の画像参照）。**
+**Xcode でのコンパイルとリンクに成功し、ldid 署名済み IPA を生成済み。iPhone 4S（iOS 6）と
+iPhone SE（iOS 15）での動作を確認しています（冒頭の画像参照）。**
 
 検証済みの内容：
 
-- **Apple 側**：Xcode 7.3.1 + iOS 9.3 SDK での open / build / link が成功。成果物は iPhone と iPad で
-  実際に動作（冒頭の画像）。
+- **Apple 側**：Xcode 7.3.1 + iOS 9.3 SDK での open / build / link が成功。成果物は iPhone 4S（iOS 6）
+  と iPhone SE（iOS 15）で動作確認済み（冒頭の画像）。
 - **署名**：IPA は **ldid** による仮署名で、脱獄 / TrollStore 向けです。
 - **Windows 側**：25 項目のプロジェクト構造チェック（元プロジェクトの形式と 3 つの target、署名と
   テスト設定が未変更であること、参照の閉包性、可搬な相対パス、ビルドメンバーの一意性、
@@ -57,9 +59,9 @@ App Store 署名でも、通常の個人 / 法人証明書による署名でも�
   加えて元の `AppDelegate.m` と `main.m`、テスト用 `main` はリンクせず）、リンクするシステム
   フレームワークは 9 個（埋め込みなし）、Bundle エントリは 9 項目。
 
-まだ項目単位で受け入れていないもの：`actool` の出力と ImageIO 画素テストの詳細、旧機種
-（iPhone 3GS/4/4S/5、iPad 2/3 など）での個別の挙動、バックグラウンドとオーディオ割り込みの処理、
-低スペック端末での性能ベンチマーク。
+項目単位では未検証の周辺項目：`actool` の出力と ImageIO 画素テストの詳細、上記以外の旧機種
+（iPhone 3GS / 4 / 5、iPad 2 / 3 など）、バックグラウンドとオーディオ割り込みの処理、
+長時間プレイ時の発熱と消費電力。
 
 ## Mac でのビルド
 

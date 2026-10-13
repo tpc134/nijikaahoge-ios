@@ -23,7 +23,7 @@
 | --- | --- |
 | 目标系统 | iOS 6.0 及以上 |
 | Base SDK | iOS 9.3（Xcode 7.3 / 7.3.1） |
-| 架构 | armv7（可选 arm64 切片供 iOS 7+ 使用） |
+| 架构 | armv7 + arm64 切片（armv7 覆盖 iOS 6，arm64 覆盖 iOS 7 及以上） |
 | Bundle ID | `com.ruich97.nijikaahoge` |
 | 语言 | Objective-C++ / C++11，libc++，ARC，C++ 异常开启，Bitcode 关闭 |
 | 图形 / 物理 / 音频 | OpenGL ES 2 / Box2D 2.2.1 / Core Audio RemoteIO |
@@ -39,13 +39,16 @@
 这不是 App Store 签名，也不是普通个人 / 企业证书签名；未越狱且未安装 TrollStore 的设备无法直接安装。
 自建产物同样需要自行签名。
 
+已在 **iPhone 4S（iOS 6）** 与 **iPhone SE（iOS 15）** 上实测运行正常。
+
 ## 构建状态
 
-**已在 Xcode 中编译、链接成功，已在 iPhone 与 iPad 真机上运行，并产出了 ldid 签名 IPA（见题图）。**
+**已在 Xcode 中编译、链接成功并产出 ldid 签名 IPA；实测在 iPhone 4S（iOS 6）与 iPhone SE（iOS 15）上运行正常（见题图）。**
 
 已完成的验证：
 
-- **Apple 侧**：Xcode 7.3.1 + iOS 9.3 SDK 打开、构建、链接通过；产物在 iPhone 与 iPad 上实际运行（题图）。
+- **Apple 侧**：Xcode 7.3.1 + iOS 9.3 SDK 打开、构建、链接通过；产物在 iPhone 4S（iOS 6）与
+  iPhone SE（iOS 15）上实测运行正常（题图）。
 - **签名**：IPA 为 **ldid** 伪签名，面向越狱 / TrollStore 安装。
 - **Windows 侧**：25 项工程结构检查（原工程格式与三个 target、签名与测试设置未改动、引用闭合、
   相对路径可移植、构建成员唯一、SDK / 部署目标 / 架构设置、入口改为程序化、方向与状态栏键、图标、共享 Scheme）；
@@ -53,8 +56,8 @@
   （5 个游戏 C++、3 个 Objective-C++、45 个 Box2D C++，以及原工程 `AppDelegate.m` 与 `main.m`，
   未链接任何测试 `main`）；9 个链接系统框架（无嵌入）；9 项 Bundle 条目。
 
-尚未逐项验收：`actool` 输出与 ImageIO 像素测试细节、旧机型（iPhone 3GS/4/4S/5、iPad 2/3 等）
-的逐项表现、前后台与音频中断行为、低端设备性能基准。
+尚未逐项验收的边缘项目：`actool` 输出与 ImageIO 像素测试细节、iPhone 3GS / 4 / 5 与 iPad 2 / 3 等
+其他旧机型、前后台切换与音频中断行为、长时间运行的发热与功耗。
 
 ## 在 Mac 上构建
 

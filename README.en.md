@@ -23,7 +23,7 @@ Game logic was ported module by module from the project's own Android v1.2 sourc
 | --- | --- |
 | Target OS | iOS 6.0 and later |
 | Base SDK | iOS 9.3 (Xcode 7.3 / 7.3.1) |
-| Architecture | armv7 (optional arm64 slice for iOS 7+) |
+| Architecture | armv7 + arm64 slice (armv7 covers iOS 6, arm64 covers iOS 7 and later) |
 | Bundle ID | `com.ruich97.nijikaahoge` |
 | Language | Objective-C++ / C++11, libc++, ARC, C++ exceptions on, Bitcode off |
 | Graphics / physics / audio | OpenGL ES 2 / Box2D 2.2.1 / Core Audio RemoteIO |
@@ -41,15 +41,17 @@ This is not an App Store signature, nor an ordinary personal / enterprise certif
 Devices that are neither jailbroken nor running TrollStore cannot install it directly. Builds you
 compile yourself also need signing.
 
+Verified running on **iPhone 4S (iOS 6)** and **iPhone SE (iOS 15)**.
+
 ## Build status
 
-**Compiled and linked in Xcode, running on a real iPhone and iPad, with an ldid-signed IPA produced
-(see the banner image above).**
+**Compiled and linked in Xcode with an ldid-signed IPA produced; verified running on iPhone 4S (iOS 6)
+and iPhone SE (iOS 15) (see the banner image above).**
 
 Verified so far:
 
 - **Apple side**: opens, builds and links in Xcode 7.3.1 against the iOS 9.3 SDK; the product runs on
-  an iPhone and an iPad (banner image).
+  iPhone 4S (iOS 6) and iPhone SE (iOS 15) (banner image).
 - **Signing**: the IPA is pseudo-signed with **ldid**, targeting jailbroken / TrollStore installation.
 - **Windows side**: 25 structural integration checks (original project format and its three targets,
   unchanged signing and test settings, reference closure, portable relative paths, unique build
@@ -59,9 +61,9 @@ Verified so far:
   `AppDelegate.m` and `main.m`, with no test `main` linked); 9 linked system frameworks, none embedded;
   9 bundle entries.
 
-Not yet accepted item by item: `actool` output and ImageIO pixel-test details, behaviour on legacy
-devices (iPhone 3GS/4/4S/5, iPad 2/3 and similar), background and audio-interruption handling, and
-low-end performance benchmarks.
+Remaining edge items not yet accepted one by one: `actool` output and ImageIO pixel-test details, older
+models other than those above (iPhone 3GS / 4 / 5, iPad 2 / 3 and similar), background and audio-
+interruption handling, and heat / power draw over long sessions.
 
 ## Building on a Mac
 
