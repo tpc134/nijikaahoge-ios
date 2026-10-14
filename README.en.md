@@ -34,8 +34,8 @@ Game logic was ported module by module from the project's own Android v1.2 sourc
 Pull the ahoge out of Nijika's head and let them fall into the bag to collect them. Feeding a bag to
 Ryo or Kita triggers different reactions, and a full gold bag summons Niji (Bocchi's little sister) to
 celebrate. Reaching **10 / 50 / 100 / 500 / 1000 / 5000** points fires a milestone easter egg, and
-Seika flies in from four directions. Both portrait and landscape orientations work — four orientations
-are declared in `Info.plist`.
+Seika flies in from four directions. Both portrait and landscape orientations work, and the view
+follows the device sensor — four orientations are declared in `Info.plist`.
 
 ## Download
 
