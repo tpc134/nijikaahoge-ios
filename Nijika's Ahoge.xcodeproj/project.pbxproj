@@ -924,7 +924,7 @@
 				CODE_SIGN_IDENTITY = "";
 				ENABLE_BITCODE = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = s;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/AhogePort/Sources\"",
@@ -940,7 +940,7 @@
 				SDKROOT = iphoneos9.3;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7 i386 x86_64 arm64";
+				VALID_ARCHS = "armv7 arm7s arm64 i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -975,7 +975,7 @@
 				SDKROOT = iphoneos9.3;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7 i386 x86_64 arm64";
+				VALID_ARCHS = "armv7 arm7s arm64 i386 x86_64";
 			};
 			name = Release;
 		};

@@ -313,7 +313,7 @@ void Game::feeding() {
     }
     if (!girl) return;
     if (n) b->setIV(1,0);
-    Obj* s7=byName("Sprite7");if (max && s7) s7->setAnim("1",true);
+    Obj* s7=byName("Sprite7");if (max && s7) {s7->setAnim("1",true);vibrate(true);}
     feedReset(b);
     if (!max) {feedTail(b,girl);return;}
     tweens.to(s7,1162,1,15);
